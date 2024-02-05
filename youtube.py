@@ -30,7 +30,7 @@ def scrape_channel_data(page_soup, channel_id):
         "traffic_source": page_soup.find("span", {"id": "youtube-stats-header-traffic_source"}).text if page_soup.find("span", {"id": "youtube-stats-header-traffic_source"}) else None,
         "external_source": page_soup.find("span", {"id": "youtube-stats-header-external_source"}).text if page_soup.find("span", {"id": "youtube-stats-header-external_source"}) else None,
         "audience": page_soup.find("span", {"id": "youtube-stats-header-subs"}).text if page_soup.find("span", {"id": "youtube-stats-header-subs"}) else None,
-        "addedBy": "Srushti"
+        "addedBy": "Priyanshi"
     }
     return payload
 
