@@ -1,18 +1,1 @@
-{
-    "version": 2,
-    "builds": [
-      {
-        "src": "youtube.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "25mb" }
-      },
-      {
-        "src": "requirements.txt",
-        "use": "@vercel/python"
-      }
-    ],
-    "routes": [
-      { "src": "/fetch_youtube_data", "dest": "/fetch_youtube_data" }
-    ]
-  }
-  
+{}
