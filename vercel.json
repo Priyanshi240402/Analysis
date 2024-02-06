@@ -14,14 +14,5 @@
     "FLASK_APP": "youtube.py",
     "ANALYTICS_URL": "https://api.promulgateinnovations.com/api/v1/setYoutubeAnalytics",
     "ANALYTICS_AUTHORIZATION": "Basic cHJvbXVsZ2F0ZTpwcm9tdWxnYXRl"
-  },
-  "build": {
-    "env": {
-      "FLASK_ENV": "production",
-      "FLASK_APP": "youtube.py"
-    },
-    "scripts": {
-      "build": "pip install -r requirements.txt"
-    }
   }
 }
