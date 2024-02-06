@@ -80,10 +80,11 @@ def fetch_and_store_youtube_data(channel_url):
         print(f"Request URL: {e.url}")
         print(f"Request Headers: {e.headers}")
 
-@app.route('/fetch_and_store/<channel_id>', methods=['GET'])
+@app.route('/api/fetch_and_store/<channel_id>', methods=['GET'])
 def fetch_and_store(channel_id):
     channel_url = f'https://socialblade.com/youtube/channel/{channel_id}'
     fetch_and_store_youtube_data(channel_url)
     return jsonify({"message": "Data fetched and stored successfully."})
+
 if __name__ == '__main__':
     app.run(debug=True)
