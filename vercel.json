@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/fetch_and_store_youtube_data.py": {
+    "api/youtube.py": {
       "runtime": "python3.8",
       "memory": 512
     }
