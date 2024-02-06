@@ -1,12 +1,10 @@
 {
-  "version": 2,
-  "functions": {
-    "api": {
-      "src": "youtube.py",
-      "runtime": "@vercel/python"
-    }
-  },
-  "routes": [
-    { "src": "/fetch_and_store/(.*)", "dest": "/api/youtube" }
-  ]
+    "builds": [{
+        "src": "youtube.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "youtube.py"
+    }]
 }
