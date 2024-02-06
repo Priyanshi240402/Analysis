@@ -85,5 +85,5 @@ def fetch_and_store(channel_id):
     channel_url = f'https://socialblade.com/youtube/channel/{channel_id}'
     fetch_and_store_youtube_data(channel_url)
     return jsonify({"message": "Data fetched and stored successfully."})
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
