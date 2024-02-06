@@ -1,6 +1,20 @@
 {
-  "rewrites": [
-    { "source": "/fetch_and_store/(.*)", "destination": "/fetch_and_store/<channel_id>" },
-    { "source": "/(.*)", "destination": "/" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/fetch_and_store/(.*)",
+      "dest": "/main.py",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/main.py"
+    }
   ]
 }
