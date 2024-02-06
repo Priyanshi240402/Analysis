@@ -1,9 +1,10 @@
 {
-    "version": 2,
-    "builds": [
-        { "src": "youtube.py", "use": "@vercel/python" }
-    ],
-    "routes": [
-        { "src": "/api/fetch_and_store/(.*)", "dest": "youtube.py" }
-    ]
+    "builds": [{
+        "src": "youtube.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "youtube.py"
+    }]
 }
