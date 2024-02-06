@@ -4,7 +4,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import requests
 import json
-import os
+
 app = Flask(__name__)
 
 analytics_url = "https://api.promulgateinnovations.com/api/v1/setYoutubeAnalytics"
@@ -85,10 +85,5 @@ def fetch_and_store(channel_id):
     channel_url = f'https://socialblade.com/youtube/channel/{channel_id}'
     fetch_and_store_youtube_data(channel_url)
     return jsonify({"message": "Data fetched and stored successfully."})
-
-if __name__ == '__main__':
-    # Use the PORT environment variable if available, or default to 5000
-    port = int(os.environ.get("PORT", 5000))
-    
-    # Set host to '0.0.0.0' to make the app externally accessible
-    app.run(debug=True, host='0.0.0.0', port=port)
+if _name_ == '_main_':
+    app.run(debug=True)
