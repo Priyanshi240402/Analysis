@@ -1,19 +1,9 @@
 {
   "functions": {
-    "api/youtube": {
-      "runtime": "python3.8",
-      "memory": 1024
-    }
+    "api": { "runtime": "python3.8", "memory": 1024 }
   },
   "routes": [
-    { "handle": "filesystem" },
-    {
-      "src": "/api/youtube",
-      "dest": "/api/youtube"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/youtube.py"
-    }
+    { "src": "/api/(.*)", "dest": "/api" },
+    { "src": "/(.*)", "dest": "/youtube.py" }
   ]
 }
