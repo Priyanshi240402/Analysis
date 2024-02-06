@@ -1,8 +1,19 @@
 {
   "functions": {
-    "api/fetch_and_store_youtube_data.py": {
-      "runtime": "now-python@1.0.0",
-      "memory": 512
+    "api/youtube": {
+      "runtime": "python3.8",
+      "memory": 1024
     }
-  }
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/api/youtube",
+      "dest": "/api/youtube"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/youtube.py"
+    }
+  ]
 }
