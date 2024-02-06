@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/youtube.py": {
-      "runtime": "python3.8",
+      "runtime": "now-python@1.0.0",
       "memory": 512
     }
   }
