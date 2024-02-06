@@ -2,19 +2,19 @@
   "version": 2,
   "builds": [
     {
-      "src": "main.py",
+      "src": "youtube.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/fetch_and_store/(.*)",
-      "dest": "/main.py",
+      "dest": "/youtube.py",
       "methods": ["GET"]
     },
     {
       "src": "/(.*)",
-      "dest": "/main.py"
+      "dest": "/youtube.py"
     }
   ]
 }
