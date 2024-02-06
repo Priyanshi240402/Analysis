@@ -39,7 +39,7 @@ def fetch_and_store_youtube_data(channel_url):
     referer_url = 'https://socialblade.com/youtube/channel/UCq-Fj5jknLsUf-MWSy4_brA'
 
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+        'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7',
 
         'Referer': referer_url,
     }
