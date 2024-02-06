@@ -4,7 +4,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 import requests
 import json
-
+import os
 app = Flask(__name__)
 
 analytics_url = "https://api.promulgateinnovations.com/api/v1/setYoutubeAnalytics"
@@ -86,4 +86,4 @@ def fetch_and_store(channel_id):
     fetch_and_store_youtube_data(channel_url)
     return jsonify({"message": "Data fetched and stored successfully."})
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
