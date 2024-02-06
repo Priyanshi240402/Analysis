@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/youtube.py": {
+    "api/fetch_and_store_youtube_data.py": {
       "runtime": "now-python@1.0.0",
       "memory": 512
     }
