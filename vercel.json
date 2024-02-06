@@ -4,7 +4,7 @@
         "use": "@vercel/python"
     }],
     "routes": [{
-        "src": "/(.*)",
+        "src": "/api/fetch_and_store/(.*)",
         "dest": "youtube.py"
     }]
 }
