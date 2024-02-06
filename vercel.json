@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/fetch_and_store/(.*)", "destination": "/fetch_and_store/<channel_id>" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
