@@ -85,6 +85,7 @@ def fetch_and_store(channel_id):
     channel_url = f'https://socialblade.com/youtube/channel/{channel_id}'
     fetch_and_store_youtube_data(channel_url)
     return jsonify({"message": "Data fetched and stored successfully."})
+
 if __name__ == '__main__':
     # Use the PORT environment variable if available, or default to 5000
     port = int(os.environ.get("PORT", 5000))
