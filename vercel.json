@@ -8,7 +8,7 @@
     }
   ],
   "routes": [
-    { "src": "/fetch_and_store/(.*)", "dest": "/youtube.py", "methods": ["GET"] },
+    { "src": "/fetch_and_store/([^/]+)", "dest": "/youtube.py" },
     { "src": "/(.*)", "dest": "/youtube.py" }
   ]
 }
